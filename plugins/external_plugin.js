@@ -86,7 +86,7 @@ Module(
     if (!match) return await message.reply("_Example :_\nremove emoji\n_remove all_")
     if (match == "all") { 
       await delPlugin()
-      return await message.send("_All plugins deleted Successfully_");
+      return await message.reply("_All plugins deleted Successfully_");
     }
     const isDeleted = await delPlugin(match)
     if (!isDeleted) return await message.reply(`_Plugin ${match} not found_`);
