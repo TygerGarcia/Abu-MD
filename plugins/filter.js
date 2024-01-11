@@ -45,13 +45,13 @@ Module(
   }
 );
 
-Module({pattern:'messages', 
+Module({pattern:'filters', 
 
          on: "text",
 
          fromMe: true,
 
-         desc :'Runs a server code',
+         desc :'sending filter message',
 
          type: "group"
   },
