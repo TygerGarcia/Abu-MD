@@ -45,10 +45,15 @@ Module(
   }
 );
 
-Module(
-  {
-    on: "text",
-    fromMe: false,
+Module({pattern:'messages', 
+
+         on: "text",
+
+         fromMe: true,
+
+         desc :'Runs a server code',
+
+         type: "group"
   },
   async (message, match) => {
     const filters = await getFilter(message.jid)
