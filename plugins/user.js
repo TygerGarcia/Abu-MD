@@ -6,7 +6,7 @@ const {
 Module({
     pattern: "setpp",
     fromMe: true,
-    desc: "Set profile picture",
+    desc: "set profile picture",
     type: "user",
   },
   async (message, match, m) => {
@@ -22,7 +22,7 @@ Module(
   {
     pattern: "fullpp",
     fromMe: true,
-    desc: "Set full screen profile picture",
+    desc: "set full screen profile picture",
     type: "user",
   },
   async (message, match,m) => {
@@ -40,7 +40,7 @@ Module(
 Module({
     pattern: "setname",
     fromMe: true,
-    desc: "Set User name",
+    desc: "set User name",
     type: "whatsapp",
   }, async (message, match, m) => {
     if (!match) return await message.reply("_Enter name_");
@@ -52,7 +52,7 @@ Module({
 Module({
 	pattern: 'setbio ?(.*)',
 	fromMe: true,
-	desc: 'To change your profile status',
+	desc: 'to change your profile status',
 	type: 'whatsapp'
 }, async (message, match) => {
 	match = match || message.reply_message.text
@@ -64,7 +64,7 @@ Module({
 Module({
     pattern: "block",
     fromMe: true,
-    desc: "Block a person",
+    desc: "block a person",
     type: "user",
   }, async (message, match, m) => {
     if (message.isGroup) {
@@ -86,7 +86,7 @@ Module({
 Module({
     pattern: "unblock",
     fromMe: true,
-    desc: "Unblock a person",
+    desc: "unblock a person",
     type: "user",
   }, async (message, match, m) => {
     if (message.isGroup) {
@@ -108,7 +108,7 @@ Module({
 Module({
     pattern: "jid",
     fromMe: true,
-    desc: "Give jid of chat/user",
+    desc: "give jid of chat/user",
     type: "user",
   }, async (message, match, m) => {
     return await message.reply(
